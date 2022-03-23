@@ -28,7 +28,7 @@ const AnecdoteList = () => {
             key={anecdote.id}
             anecdote={anecdote}
             handleVote={() => {
-              dispatch(incVote(anecdote.id))
+              dispatch(incVote(anecdote))
               dispatch(createNotification("you vote '" + anecdote.content + "'"))
               setTimeout(() => {
                 dispatch(clearNotification())
