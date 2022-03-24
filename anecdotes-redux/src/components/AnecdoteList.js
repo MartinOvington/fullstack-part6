@@ -27,7 +27,7 @@ const AnecdoteList = (props) => {
             anecdote={anecdote}
             handleVote={() => {
               props.incVote(anecdote)
-              props.setNotification("you vote '" + anecdote.content + "'", 10)
+              props.setNotification("you vote '" + anecdote.content + "'", 5)
             }}
           />
         )}
